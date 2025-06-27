@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr:rgb(67, 165, 223);
+    --clr2: rgba(36, 109, 138, 0.411);
+    --textclr: white;
+}
+
+.mynav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(44, 105, 116);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    display: flex;
+    padding: 110px;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--textclr);
+}
+
+.serv {
+    color: var(--textclr);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* font-size: large; */
+    font-weight: bold;
+    
+
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    font-size: 20px;
+}
+
+
+.contact button  {
+    width: 80px;
+    height: 30px;
+    background-color: var(--clr);
+    font-size: large;
+    border-radius: 30px;
+    color: var(--textclr);
+    border: none;
+    margin-right: 110px; 
+}
+
+body {
+    background-color: var(--clr2)
+}
+
