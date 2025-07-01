@@ -1,0 +1,175 @@
+                                   GITHUB CONFIGURATIONS WHICH ARE SET GLOBALLY
+
+1. git config --global user.name "name"
+2. git config --global user.email "email@gmail.com"
+3. git config --global core.editor "code --wait" {here code denotes vscode or itna vscode open hoga tab tak waiting            
+                likha aayega}
+4. git config --global core.autocrlf {line ending apne ap os ke hisaab se convert ho jaaye}
+5. git config --global -e {to check whether these all are applied or to change them}
+
+
+                                     NOTE:- THEAE ALL ARE SETT IN CMD/GITBASH
+
+---------------------------------------------------------------------------------------------------------------------
+
+-->TO MAKE GIT AVAILABLE IN MY PROJECT
+
+Method 1..git init
+Method 2..git icon par jaake "Initialize Repository"
+
+
+-->TO ADD ANY FILE IN GIT TO TRACK IT
+
+Method 1..git add filename/.
+Method 2..Git icon par jaake under changes click on (+)
+
+
+-->MAKING A CHECKPOINT/SAVE POINT
+
+Method 1..git commit -m "type message here"
+Method 2..just type message and click on commit
+
+---------------------------------------------------------------------------------------------------------------------
+
+* git.log --oneline -->to know the current status of saved points(ye saare commit histories batata hai)
+
+* git.log --oneline --graph-->to get a graph map
+
+* git status -s-->to check konsi file kis stage mai hai
+    note::(??filename.tt  this denotes untracked file)
+           git status sirf unka status batayega jo files committed nhi hai ya fir commit k baad change hui hai
+
+* .gtignore--> isme jo bhi file daalenge wo track nhi hogi
+
+* git reset --hard HEAD~1 {to get back on last point}
+---------------------------------------------------------------------------------------------------------------------
+
+                                                   BRANCHING
+
+* git branch nameofbranch              {new branch will form with given name}
+* git branch                           {to check all branches}
+* git branch -d nameofbranch           {to delete branch}
+* git switch nameofbranch              {to switch on to another branch}
+* git merge nameofbranch               {to merge any brnch to main branch} NOTE:main branch par hona important hai}
+* git branch -C nameofbranch           {new branch will form and switch to it} ek command se do kaam
+
+-------------------------------------------------------------------------------------------------------------------  
+                                                   STASHING
+
+
+
+if i try to switch to new branch without saving some work of current branch the message will come to warm that this work will be deleted
+So, i will use stashing to save it as draft it means no to add hoga or nahi delete bas save rahega git mai
+and later i can add it
+
+* git stash {git keeps it in memory}
+* git stash apply {to add later from git draft}
+* git stash clear {  memory se delete krna hai}
+
+-------------------------------------------------------------------------------------------------------------------
+                                           COLLABRATION ON GITHUB
+
+
+
+1. main banda folder or initial files bnayega
+2. ab unko github par daaldega
+3. collaborators add krega
+4. saare bande us repo se cloning krenge
+5. apni branch create KAREIN[VERY IMPORTANT]
+6. apna code usi branch mai likhen
+7. complete hone pr commit dein
+8. inform teammate about commit
+9. merger banda fetch and commit krega and re-puch krega
+
+-------------------------------------------------------------------------------------------------------------------       
+                                   PROCESS OF CLONING {for collaborators}
+
+first copy the url from code section in repository
+
+Now open terminal 
+* git clone pasteurl
+
+Now create a branch and start working
+Now add-->commit-->push
+
+* git push -u nameofbranch -->to push code on github by collaborator
+
+Now another branch will appear in github with modified code
+
+-------------------------------------------------------------------------------------------------------------------
+                                      PROCESS OF MERGING {for merger}
+
+* git fetch {to fech updated data from github}
+* git merge nameofbranch
+* git push origin main
+
+
+
+now the collaborator will pull (fetch and merge) the updated repository
+
+*git pull
+
+ 
+------------------------------------------------------------------------------------------------------------------
+
+                                                STEPS TO PUSH ON GITHUB
+echo "# LEARNING-PHASE" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ertazaahmad/learning-projects.git
+git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
